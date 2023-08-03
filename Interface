@@ -1,0 +1,20 @@
+//interface is fully abstract method
+//head of the method only, no body available
+//implements is a keyword to create abstract class
+//inheritance in more imporatant
+
+interface anto { // interface class
+	void m(); // method cant have a method body
+}
+
+public class Interface implements anto { // class implement interface
+	public void m() { // inheritance used to implement interface
+		System.out.println("anto"); // public keyword is must to identify this is interface
+	}
+
+	public static void main(String[] args) {
+		Interface ob = new Interface();
+		ob.m();
+	}
+
+}
