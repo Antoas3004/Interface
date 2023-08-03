@@ -1,0 +1,26 @@
+interface car { // frist interface
+	void wheel();
+}
+
+class bikes { // one class file
+	void wheels() {
+		System.out.println("bike has two wheels");
+	}
+}
+
+public class Interface_class extends bikes implements car {
+	// in this proramme
+	// class extends class
+	// class implement interface
+	// in this case frist extends then implement
+
+	public void wheel() {
+		System.out.println("car has 4 wheels");
+	}
+
+	public static void main(String[] args) {
+		Interface_class a = new Interface_class();
+		a.wheel();
+		a.wheels();
+	}
+}
