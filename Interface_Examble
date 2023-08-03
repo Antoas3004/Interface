@@ -1,0 +1,36 @@
+nterface bike {
+	void wheel();
+
+	void engine();
+                        //abstact methods
+	void Break();
+
+	void fule();
+}
+
+public class Interface_Examble implements bike {
+	//method implements in class using inheritance
+	public void wheel() {
+		System.out.println("bike have two wheels");
+	}
+
+	public void engine() {
+		System.out.println("200 cc engine");
+	}
+														
+	public void Break() {
+		System.out.println("bybre breaks are used");
+	}
+
+	public void fule() {
+		System.out.println("12.5 liter petrol fule tank");
+	}
+
+	public static void main(String[] args) {
+		Interface_Examble a = new Interface_Examble();
+		a.wheel();
+		a.engine();
+		a.Break();
+		a.fule();
+	}
+}
