@@ -1,0 +1,24 @@
+interface bank {
+	int amount();
+}
+
+class sbi implements bank {
+	public int amount() {
+		return 1;
+	}
+}
+
+class rbi implements bank {
+	public int amount() {
+		return 2;
+	}
+}
+
+public class Interface_bank {
+
+	public static void main(String[] args) {
+		bank a = new rbi();
+		System.out.println(a.amount());
+
+	}
+}
