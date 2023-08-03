@@ -1,0 +1,24 @@
+//multiple inhritance
+//we achive multiple inheritance using interface
+
+interface pet {
+	void dog();//interface with dog method name
+}
+
+interface pet1 {
+	void dog();//interface with same method name as pet
+}
+
+public class Interface_use_Multi_inheritance implements pet, pet1 {
+
+	public void dog() {
+		System.out.println("dog has 4 legs");
+	}
+
+	public static void main(String[] args) {
+		Interface_use_Multi_inheritance a = new Interface_use_Multi_inheritance();
+		a.dog();
+	}
+}
+// in java multiple inheritance is possible because of interface
+// if we use interface we achive mult
