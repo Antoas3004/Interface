@@ -1,0 +1,38 @@
+interface dog { // interface class one
+	void legs1();
+
+	void tile();
+}
+
+interface cat { // interface class two
+	void legs();
+
+	void food();
+}
+
+public class Interface_And_Interface implements dog, cat {
+	// class implement both interface
+	public void legs1() {
+		System.out.println("dog have 4 legs");
+	}
+
+	public void tile() {
+		System.out.println("dog have big tile");
+	}
+
+	public void legs() {
+		System.out.println("cat have 4 legs");
+	}
+
+	public void food() {
+		System.out.println("cat fav food fish");
+	}
+
+	public static void main(String[] args) {
+		Interface_And_Interface a = new Interface_And_Interface();
+		a.legs();
+		a.legs1();
+		a.tile();
+		a.food();
+	}
+}
